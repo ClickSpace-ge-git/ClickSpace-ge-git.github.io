@@ -1,0 +1,167 @@
+@import "../MainStyle";
+
+//Computer Screen
+@media screen and (min-width: 820px) {
+   .LanguageBarContainer {
+
+      .languageBtnCheck {
+         &:checked ~ .LBC_ListContainer {
+            height: 171px;
+         }
+      }
+
+      .LBC_Main, .LBC_ListContainer {
+         img {
+            width: 30px;
+         }
+
+         i {
+            font-size: 14px;
+         }
+      }
+
+      .LBC_Main {
+         width: 95px;
+         label {
+            width: 111px;
+            height: 38px;
+         }
+      }
+
+      .LBC_ListContainer {
+         ul {
+            width: 109px;
+         }
+      }
+   }
+}
+
+//Phone Screen
+@media screen and (max-width: 820px) {
+   .LanguageBarContainer {
+      .languageBtnCheck {
+         &:checked ~ .LBC_ListContainer {
+            height: 160px;
+         }
+      }
+
+      .LBC_Main,  .LBC_ListContainer {
+         img {
+            width: 25px;
+         }
+
+         p {
+            font-size: 12px;
+         }
+
+         i {
+            font-size: 12px;
+         }
+      }
+
+      .LBC_Main {
+         width: 77px;
+
+         label {
+            width: 91px;
+            height: 32px;
+         }
+      }
+
+      .LBC_ListContainer ul {
+         width: 91px;
+      }
+   }
+}
+
+//Default Style
+.LanguageBarContainer {
+   p {
+      font-family: $NavBarFontFamily;
+   }
+
+   .languageBtnCheck {
+      display: none;
+
+      &:checked ~ .LBC_Main {
+         border-radius: 6px 6px 0 0;
+         transition: 0s;
+
+         i {
+            transform: rotate(-90deg);
+         }
+      }
+   }
+
+   .LBC_Main, .LBC_ListContainer {
+      p {
+         padding: 0 10px;
+         color: $BlueColor;
+      }
+
+      i {
+         transition: 0.1s;
+         color: $BlueColor;
+      }
+   }
+
+   .LBC_Main {
+      display: flex;
+      align-items: center;
+      border: $Bframe;
+      border-radius: 6px;
+      cursor: pointer;
+      padding: 7px;
+      transition: 1s;
+
+      label {
+         position: absolute;
+         border-radius: 6px;
+         transform: translateX(-8px);
+         cursor: pointer;
+      }
+
+      &:hover {
+         background: #b7dfff;
+      }
+   }
+
+   .LBC_ListContainer {
+      position: absolute;
+      overflow: hidden;
+      height: 0;
+      transition: 0.3s;
+
+      ul {
+         background: white;
+         list-style: none;
+         border: $Bframe;
+         border-top: none;
+         border-radius: 0 0 6px 6px;
+
+         li {
+            display: flex;
+            padding: 10px 7px;
+            background: white;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:last-child {
+               border-radius: 0 0 5px 5px;
+            }
+
+            &:hover {
+               background: $BlueColor;
+
+               p {
+                  color: white;
+               }
+            }
+         }
+
+         .ka p {
+               font-family: $GeFontFamily;
+            }
+         }
+      }
+}

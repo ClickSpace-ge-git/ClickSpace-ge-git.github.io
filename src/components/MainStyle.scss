@@ -1,0 +1,28 @@
+/* ---------- Fonts ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$NavBarFontFamily: 'Open Sans', sans-serif;
+
+@font-face {
+   font-family: "geoFont";
+   src: url("../text/fonts/bpg_extrasquare_mtavruli.ttf");
+}
+$GeFontFamily: "geoFont";
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+$TitleFontFamilyStyle: 'Questrial', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+$ButtonFontFamilyStyle: 'Quicksand', sans-serif;
+
+/* ---------- Colors ---------- */
+
+$BlueColor: #008edd;
+
+
+/* ---------- Frames ---------- */
+
+$frame: 1px black solid;
+$Bframe: 1px $BlueColor solid;
+
+/* ---------- Sizes ----------- */
+
