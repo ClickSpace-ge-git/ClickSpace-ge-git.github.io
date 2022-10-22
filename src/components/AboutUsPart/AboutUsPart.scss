@@ -1,1 +1,245 @@
 @import "../MainStyle";
+
+//Computer Screen
+@media screen and (min-width: 820px) {
+   .AboutUsPartContainer {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 2000px;
+
+      .AboutUsPartContainer2 {
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+         margin: 50px 0;
+         //border: $frame;
+
+         .AUPC2_LeftPart {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            //border: $frame;
+
+            .AUPC2_LeftPart_InnerContainer {
+               img {
+                  max-width: 600px;
+                  width: 100%;
+               }
+            }
+         }
+
+         .AUPC2_RightPart {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            //border: $frame;
+
+            .AUPC2_RightPart_InnerContainer {
+               padding: 0 100px;
+
+               h1 {
+                  margin: 20px 0 20px 0;
+                  font-size: 40px;
+                  text-transform: uppercase;
+               }
+
+               .AUPC2_RP_Text {
+                  font-size: 17px;
+                  text-align: justify;
+                  text-justify: inter-word;
+                  line-height: 30px;
+                  color: #6e6e6e;
+               }
+
+               .AUPC2_RPBtn {
+                  outline: none;
+                  background: $BlueColor;
+                  background: white;
+                  border: $Bframe;
+                  padding: 8px 30px;
+                  border-radius: 100px;
+                  transition: 0.3s;
+                  cursor: pointer;
+                  margin-top: 35px;
+
+                  a {
+                     text-decoration: none;
+                     color: $BlueColor;
+                     transition: 0.3s;
+
+                     p {
+                        font-size: 16px;
+                     }
+
+
+                  }
+                  &:hover {
+                     background: $BlueColor;
+                     a {
+                        color: white;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+//Phone Screen
+@media screen and (max-width: 820px) {
+   .AboutUsPartContainer {
+      display: flex;
+      justify-content: center;
+      background-image: url("../../media/images/Background_Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      //height: 100%;
+      //width: 100%;
+      //max-height: 700px;
+
+      .AboutUsPartContainer2 {
+         margin: 25px;
+         display: flex;
+         justify-content: center;
+
+         .AUPC2_LeftPart {
+            display: none;
+         }
+
+         .AUPC2_RightPart {
+            border-radius: 10px;
+            background: rgba(white, 0.9);
+
+            .AUPC2_RightPart_InnerContainer {
+               margin: 10px;
+               padding: 20px;
+               h3 {
+                  text-align: center;
+               }
+
+               h1 {
+                  text-align: center;
+                  margin: 20px 0 20px 0;
+                  font-size: 40px;
+                  text-transform: uppercase;
+               }
+
+               .AUPC2_RP_Text {
+                  font-size: 17px;
+                  text-align: justify;
+                  text-justify: inter-word;
+                  line-height: 20px;
+                  color: #6e6e6e;
+               }
+
+               .AUPC2_RPBtn {
+                  outline: none;
+                  background: $BlueColor;
+                  background: white;
+                  border: $Bframe;
+                  padding: 8px 30px;
+                  border-radius: 100px;
+                  transition: 0.3s;
+                  cursor: pointer;
+                  margin-top: 35px;
+                  width: 100%;
+
+                  a {
+                     text-decoration: none;
+                     color: $BlueColor;
+                     transition: 0.3s;
+
+                     p {
+                        font-size: 16px;
+                     }
+                  }
+                  &:hover {
+                     background: $BlueColor;
+                     a {
+                        color: white;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.AboutUsPartContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .AboutUsPartContainer2 {
+
+
+      h3 {
+         font-family: $ButtonFontFamilyStyle;
+      }
+
+      h1 {
+         font-family: $TitleFontFamilyStyle;
+      }
+
+      p {
+         font-family: $NavBarFontFamily;
+      }
+
+      //.AUPC2_RightPart {
+      //   width: 44.8vw;
+      //
+      //   h1 {
+      //      margin: 20px 0 20px 0;
+      //      font-size: 40px;
+      //      text-transform: uppercase;
+      //   }
+      //
+      //   .AUPC2_RP_Text {
+      //      font-size: 17px;
+      //      text-align: justify;
+      //      text-justify: inter-word;
+      //      line-height: 30px;
+      //      color: #6e6e6e;
+      //   }
+      //
+      //   .AUPC2_RPBtn {
+      //      outline: none;
+      //      background: $BlueColor;
+      //      background: white;
+      //      border: $Bframe;
+      //      padding: 8px 30px;
+      //      border-radius: 100px;
+      //      transition: 0.3s;
+      //      cursor: pointer;
+      //      margin-top: 35px;
+      //
+      //      a {
+      //         text-decoration: none;
+      //         color: $BlueColor;
+      //         transition: 0.3s;
+      //
+      //         p {
+      //            font-size: 16px;
+      //         }
+      //
+      //
+      //      }
+      //      &:hover {
+      //         background: $BlueColor;
+      //         a {
+      //            color: white;
+      //         }
+      //      }
+      //   }
+      //}
+
+
+      .hide {
+         display: none;
+      }
+   }
+}
+

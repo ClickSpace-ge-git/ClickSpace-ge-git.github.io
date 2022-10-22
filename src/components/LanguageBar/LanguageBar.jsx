@@ -24,16 +24,6 @@ export default function LanguageBar() {
                      <img src={require("../../media/images/Flags/ka.png")} alt="ka"/>
                      <p>ქარ</p>
                   </li>
-                  {/*----------------------------*/}
-                  <li>
-                     <img src={require("../../media/images/Flags/ru.png")} alt="ru"/>
-                     <p>РУС</p>
-                  </li>
-                  {/*----------------------------*/}
-                  <li>
-                     <img src={require("../../media/images/Flags/de.png")} alt="de"/>
-                     <p>DEU</p>
-                  </li>
                </ul>
             </div>
          </div>
