@@ -4,9 +4,9 @@
 
    .ServicePartContainer2 {
       padding: 20px;
-      background: #94d6ff;
+      background: #8edbff;
 
-      h3 {
+      h3, .SPCSS_button {
          font-family: $ButtonFontFamilyStyle;
       }
 
@@ -21,18 +21,26 @@
       .SPC_Title {
          display: flex;
          justify-content: center;
+         font-size: 45px;
       }
 
       .SPC_ServiceList {
          display: flex;
          justify-content: center;
+
+
+
          .SPCSL_innerContainer {
+
             .SPCS_Service {
                background: white;
                border-radius: 10px;
-               margin: 10px;
+               margin: 30px;
                padding: 20px;
                width: 250px;
+               box-shadow: 0 6px 30px -5px rgba(0,0,0,0.5);
+               -webkit-box-shadow: 0 6px 30px -5px rgba(0,0,0,0.5);
+               -moz-box-shadow: 0 6px 30px -5px rgba(0,0,0,0.5);
 
                .SPCSS_icon {
                   display: flex;
@@ -61,6 +69,41 @@
                   margin: 30px 10px;
                }
 
+               .SPCSS_Text {
+                  text-align: justify;
+               }
+
+               .SPCSS_details {
+                  margin-top: 25px;
+                  margin-left: 15px;
+
+                  li {
+                     &:not(:last-child) {
+                        padding-bottom: 10px;
+                     }
+                     p {
+
+                     }
+                  }
+               }
+
+               .SPCSS_button {
+                  width: 100%;
+                  border: #00a5fe 1px solid;
+                  color: #00a5fe;
+                  font-weight: bold;
+                  font-size: 15px;
+                  background: white;
+                  outline: none;
+                  border-radius: 5px;
+                  padding: 8px;
+                  margin-top: 20px;
+
+                  &:hover {
+                     background: #00a5fe;
+                     color: white;
+                  }
+               }
             }
          }
       }
