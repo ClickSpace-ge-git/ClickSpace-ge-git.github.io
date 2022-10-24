@@ -54,12 +54,14 @@ export default function AboutUs() {
             <div class="ABUSTCCard">
                 <div class="ABUSTCCContent">
                     <div class="ABUSTCCCImageBox">
-                        <img src="../images/person_icon.png" alt=""/>
+                    <img src={require("../../media/images/AbUsTeam2.jpg")} alt="AbUsTeam2.jpg"/>
                     </div>
                     <div class="ABUSTCCCBox">
                         <h4>Alexander Sainishvili</h4>
                         <h5>Founder</h5>
                     </div>
+                    <br/>
+                    <br/>
                     <div class="ABUSTCCCBSocial">
                         <i class="fa fa-facebook-f"></i>
                         <i class="fa fa-twitter"></i>
@@ -71,12 +73,14 @@ export default function AboutUs() {
             <div class="ABUSTCCard">
                 <div class="ABUSTCCContent">
                     <div class="ABUSTCCCImageBox">
-                        <img src="../images/person_icon.png" alt=""/>
+                    <img src={require("../../media/images/AbUsTeam1.jpg")} alt="AbUsTeam1.jpg"/>
                     </div>
                     <div class="ABUSTCCCBox">
                         <h4>Ioane Devdariani</h4>
                         <h5>Founder</h5>
                     </div>
+                    <br/>
+                    <br/>
                     <div class="ABUSTCCCBSocial">
                         <i class="fa fa-facebook-f"></i>
                         <i class="fa fa-twitter"></i>
@@ -88,12 +92,14 @@ export default function AboutUs() {
             <div class="ABUSTCCard">
                 <div class="ABUSTCCContent">
                     <div class="ABUSTCCCImageBox">
-                        <img src="../images/person_icon.png" alt=""/>
+                    <img src={require("../../media/images/AbUsTeam4.jpg")} alt="AbUsTeam4.jpg"/>
                     </div>
                     <div class="ABUSTCCCBox">
                         <h4>Luka Karoiani</h4>
                         <h5>Founder</h5>
                     </div>
+                    <br/>
+                    <br/>
                     <div class="ABUSTCCCBSocial">
                         <i class="fa fa-facebook-f"></i>
                         <i class="fa fa-twitter"></i>
@@ -108,12 +114,14 @@ export default function AboutUs() {
                 
                 <div class="ABUSTCCContent">
                     <div class="ABUSTCCCImageBox">
-                        <img src="../images/person_icon.png" alt=""/>
+                    <img src={require("../../media/images/AbUsTeam3.jpg")} alt="AbUsTeam3.jpg"/>
                     </div>
                     <div class="ABUSTCCCBox">
                         <h4>Dachi Skhiladze</h4>
                         <h5>Founder</h5>
                     </div>
+                    <br/>
+                    <br/>
                     <div class="ABUSTCCCBSocial">
                         <i class="fa fa-facebook-f"></i>
                         <i class="fa fa-twitter"></i>
@@ -125,12 +133,14 @@ export default function AboutUs() {
             <div class="ABUSTCCard">
                 <div class="ABUSTCCContent">
                     <div class="ABUSTCCCImageBox">
-                        <img src="../images/person_icon.png" alt=""/>
+                    <img src={require("../../media/images/AbUsTeam5.jpg")} alt="AbUsTeam5.jpg"/>
                     </div>
                     <div class="ABUSTCCCBox">
                         <h4>Irakli Okropiridze</h4>
                         <h5>Founder</h5>
                     </div>
+                    <br/>
+                    <br/>
                     <div class="ABUSTCCCBSocial">
                         <i class="fa fa-facebook-f"></i>
                         <i class="fa fa-twitter"></i>
