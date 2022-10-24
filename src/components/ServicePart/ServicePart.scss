@@ -1,5 +1,19 @@
 @import "../MainStyle";
 
+@media screen and (min-width: 820px) {
+   .ServicePartContainer {
+
+      .ServicePartContainer2 {
+
+         .SPC_ServiceList {
+            .SPCSL_innerContainer {
+               display: flex;
+            }
+         }
+      }
+   }
+}
+
 .ServicePartContainer {
 
    .ServicePartContainer2 {
@@ -27,8 +41,6 @@
       .SPC_ServiceList {
          display: flex;
          justify-content: center;
-
-
 
          .SPCSL_innerContainer {
 
