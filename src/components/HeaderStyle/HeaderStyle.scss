@@ -1,6 +1,6 @@
 @import "../MainStyle";
 //Computer Screen
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 1081px) {
    .HeaderStyleContainer {
       .HeaderStyleContainer2 {
          display: flex;
@@ -65,7 +65,7 @@
 }
 
 //Phone Screen
-@media screen and (max-width: 821px) {
+@media screen and (max-width: 1081px) {
    .HeaderStyleContainer {
       .HeaderStyleContainer2 {
          justify-content: space-between;
