@@ -1,5 +1,13 @@
-//.HomePageContainer {
-//   width: 100vw;
-//   height: 100vh;
-//   background: black;
-//}
+.HomePageContainer {
+   display: flex;
+   justify-content: center;
+
+   .HomePageContainer2 {
+      //border: black 1px solid;
+      //background: black;
+
+      width: 100%;
+      max-width: 2000px;
+      height: 100vh;
+   }
+}

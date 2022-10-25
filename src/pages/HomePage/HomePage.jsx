@@ -5,15 +5,18 @@ import ServicePart from "../../components/ServicePart/ServicePart"
 import AboutUsPart from "../../components/AboutUsPart/AboutUsPart"
 import FooterStyle from "../../components/FooterStyle/FooterStyle"
 
+
 export default function HomePage() {
    return (
       <>
          <div className="HomePageContainer">
-            <HeaderStyle/>
-            <StartPart/>
-            <ServicePart/>
-            <AboutUsPart/>
-            <FooterStyle/>
+            <div className="HomePageContainer2">
+               <HeaderStyle/>
+               <StartPart/>
+               <ServicePart/>
+               <AboutUsPart/>
+               <FooterStyle/>
+            </div>
          </div>
       </>
    );

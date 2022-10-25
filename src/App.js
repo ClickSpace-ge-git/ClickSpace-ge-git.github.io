@@ -1,10 +1,13 @@
 import './App.scss';
-import HomePage from "./pages/HomePage/HomePage";
+import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
+import HeaderStyle from "./components/HeaderStyle/HeaderStyle"
 
 export default function App() {
   return (
      <>
-        <HomePage />
+        <HeaderStyle />
+        <AboutUsPage />
+
      </>
   );
 }

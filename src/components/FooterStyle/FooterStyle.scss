@@ -1,1 +1,122 @@
 @import "../MainStyle";
+
+.FooterStyleContainer {
+   h3 {
+      font-family: $ButtonFontFamilyStyle;
+   }
+
+   h1 {
+      font-family: $TitleFontFamilyStyle;
+   }
+
+   p {
+      font-family: $NavBarFontFamily;
+   }
+
+   .FooterStyleContainer2 {
+      background: #ffffff;
+      text-align: center;
+
+      .FSC_graph {
+         color: $BlueColor;
+         .FSCG_List {
+            list-style: none;
+            li {
+               padding: 10px;
+               margin-bottom: 30px;
+               border-radius: 10px;
+
+               p {
+                  font-weight: bold;
+               }
+            }
+         }
+
+         .showHover {
+            background: $BlueColor;
+            margin: 0 30px;
+            p {
+               color: white;
+            }
+         }
+      }
+
+      .FSCG_LinkList {
+         list-style: none;
+         display: flex;
+         justify-content: center;
+         color: white;
+         padding-bottom: 20px;
+
+         li {
+            padding: 10px;
+            p {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 35px;
+               height: 35px;
+               border: $BlueColor 2px solid;
+               color: $BlueColor;
+               border-radius: 100px;
+               transition: 0.2s;
+
+               &:hover {
+                  background: $BlueColor;
+                  color: white;
+               }
+            }
+         }
+      }
+
+      .FSC_LogoGraph {
+         img {
+            width: 300px;
+         }
+      }
+
+      .FSC2_copyRightPart {
+         background: $BlueColor;
+         padding-bottom: 30px;
+
+         .FSC2_CRP_ArrowContainer {
+            display: flex;
+            justify-content: center;
+
+            .Arrow {
+               width: 0;
+               height: 0;
+               border-left: 80px solid transparent;
+               border-right: 80px solid transparent;
+               border-top: 50px solid white;
+            }
+         }
+
+         .FSC2_CRP_Text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .FSC2_CRPT_text {
+               margin-left: 15px;
+            }
+
+            .FSC2_CRP_imageContainer {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background: white;
+               border-radius: 100px;
+               width: 50px;
+               height: 50px;
+
+
+
+               img {
+                  width: 40px;
+               }
+            }
+         }
+      }
+   }
+}
