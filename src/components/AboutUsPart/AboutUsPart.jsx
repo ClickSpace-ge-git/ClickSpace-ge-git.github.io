@@ -2,6 +2,7 @@ import "./AboutUsPart.scss"
 import {useNavigate} from "react-router-dom";
 
 export default function AboutUsPart() {
+   let navigate = useNavigate()
    return (
       <>
          <div className="AboutUsPartContainer">
@@ -29,7 +30,7 @@ export default function AboutUsPart() {
                         business.
                      </p>
 
-                     <button className="AUPC2_RPBtn"><a href="/aboutus"><p>Learn more</p></a></button>
+                     <button className="AUPC2_RPBtn"><a onClick={(e) => {navigate("/aboutus")}}><p>Learn more</p></a></button>
                   </div>
                </div>
 
@@ -46,7 +47,7 @@ export default function AboutUsPart() {
                      რომელთაც არ აქვთ გამოცდილება ვებ - გვერდის დიზაინში ან ტექნიკურ ცოდნასთან დაკავშირებით. ეს საშუალებას
                      აძლევს ჩვენს კლიენტს შეინარჩუნოს ციფრული ბიზნესის სწრაფად ცვალებადი საჭიროებები.
                   </p>
-                  <button className="AUPC2_RPBtn"><a href="/aboutus"><p>გაიგე მეტი</p></a></button>
+                  <button className="AUPC2_RPBtn"><a onClick={(e) => {navigate("/aboutus")}}><p>გაიგე მეტი</p></a></button>
                </div>
 
             </div>
