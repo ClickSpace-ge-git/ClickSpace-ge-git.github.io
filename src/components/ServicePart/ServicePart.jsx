@@ -1,6 +1,8 @@
 import "./ServicePart.scss"
+import {useNavigate} from "react-router-dom";
 
 export default function ServicePart() {
+   let navigate = useNavigate()
    return (
       <>
          <div className="ServicePartContainer">
@@ -22,7 +24,7 @@ export default function ServicePart() {
                            <li><p>Easy to use and Maintain</p></li>
                            <li><p>made with your needs in mind</p></li>
                         </ul>
-                        <button className="SPCSS_button">get more</button>
+                        <button className="SPCSS_button" onClick={(e) => {navigate("/services")}}>get more</button>
                      </div>
                      {/*-----------------------------------------------------*/}
                      <div className="SPCS_Service">
@@ -37,7 +39,7 @@ export default function ServicePart() {
                            <li><p>Cut out dead code</p></li>
                            <li><p>improve user experience</p></li>
                         </ul>
-                        <button className="SPCSS_button">get more</button>
+                        <button className="SPCSS_button" onClick={(e) => {navigate("/services")}}>get more</button>
                      </div>
                      {/*-----------------------------------------------------*/}
                      <div className="SPCS_Service">
@@ -52,7 +54,7 @@ export default function ServicePart() {
                            <li><p>Optimized for Mobile Consumption</p></li>
                            <li><p>Cheap and Effective concept</p></li>
                         </ul>
-                        <button className="SPCSS_button">get more</button>
+                        <button className="SPCSS_button" onClick={(e) => {navigate("/services")}}>get more</button>
                      </div>
                      {/*-----------------------------------------------------*/}
                      <div className="SPCS_Service">
@@ -67,7 +69,7 @@ export default function ServicePart() {
                            <li><p>Training of In-House developers</p></li>
                            <li><p>Outsourcing capabilites for all IT services</p></li>
                         </ul>
-                        <button className="SPCSS_button">get more</button>
+                        <button className="SPCSS_button" onClick={(e) => {navigate("/services")}}>get more</button>
                      </div>
                      {/*-----------------------------------------------------*/}
                   </div>
