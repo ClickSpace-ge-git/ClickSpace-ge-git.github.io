@@ -46,6 +46,7 @@
          display: flex;
          justify-content: center;
          color: white;
+         padding-bottom: 20px;
 
          li {
             padding: 10px;
@@ -71,6 +72,50 @@
       .FSC_LogoGraph {
          img {
             width: 300px;
+         }
+      }
+
+      .FSC2_copyRightPart {
+         background: $BlueColor;
+         padding-bottom: 30px;
+
+         .FSC2_CRP_ArrowContainer {
+            display: flex;
+            justify-content: center;
+
+            .Arrow {
+               width: 0;
+               height: 0;
+               border-left: 80px solid transparent;
+               border-right: 80px solid transparent;
+               border-top: 50px solid white;
+            }
+         }
+
+         .FSC2_CRP_Text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .FSC2_CRPT_text {
+               margin-left: 15px;
+            }
+
+            .FSC2_CRP_imageContainer {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background: white;
+               border-radius: 100px;
+               width: 50px;
+               height: 50px;
+
+
+
+               img {
+                  width: 40px;
+               }
+            }
          }
       }
    }

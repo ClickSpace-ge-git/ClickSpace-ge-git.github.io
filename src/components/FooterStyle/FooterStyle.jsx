@@ -29,17 +29,18 @@ export default function FooterStyle() {
                      <li><p><i className="fa-brands fa-discord"></i></p></li>
                   </ul>
                </div>
-
+               <div className="FSC2_copyRightPart">
+                  <div className="FSC2_CRP_ArrowContainer">
+                     <div className="Arrow"></div>
+                  </div>
+                  <div className="FSC2_CRP_Text">
+                     <div className="FSC2_CRP_imageContainer">
+                        <img src={require("../../media/images/onlyLogo.png")} alt="Test" />
+                     </div>
+                     <p className="FSC2_CRPT_text">©2022 ClickSpace, LTD</p>
+                  </div>
+               </div>
             </div>
-
-
-
-
-
-
-
-
-
          </div>
       </>
    );
