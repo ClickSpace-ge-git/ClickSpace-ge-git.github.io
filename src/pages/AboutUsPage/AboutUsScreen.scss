@@ -1,5 +1,16 @@
-@mixin mobile {
-    @media screen and (max-width: 450px ) {
+@mixin mobile1 {
+    @media screen and (max-width: 400px ) {
+        @content;
+    }
+}
+
+@mixin mobile2 {
+    @media screen and (max-width: 550px ) {
+        @content;
+    }
+}
+@mixin mobile3 {
+    @media screen and (max-width: 850px ) {
         @content;
     }
 }
