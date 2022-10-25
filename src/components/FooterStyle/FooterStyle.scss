@@ -1,1 +1,77 @@
 @import "../MainStyle";
+
+.FooterStyleContainer {
+   h3 {
+      font-family: $ButtonFontFamilyStyle;
+   }
+
+   h1 {
+      font-family: $TitleFontFamilyStyle;
+   }
+
+   p {
+      font-family: $NavBarFontFamily;
+   }
+
+   .FooterStyleContainer2 {
+      background: #ffffff;
+      text-align: center;
+
+      .FSC_graph {
+         color: $BlueColor;
+         .FSCG_List {
+            list-style: none;
+            li {
+               padding: 10px;
+               margin-bottom: 30px;
+               border-radius: 10px;
+
+               p {
+                  font-weight: bold;
+               }
+            }
+         }
+
+         .showHover {
+            background: $BlueColor;
+            margin: 0 30px;
+            p {
+               color: white;
+            }
+         }
+      }
+
+      .FSCG_LinkList {
+         list-style: none;
+         display: flex;
+         justify-content: center;
+         color: white;
+
+         li {
+            padding: 10px;
+            p {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 35px;
+               height: 35px;
+               border: $BlueColor 2px solid;
+               color: $BlueColor;
+               border-radius: 100px;
+               transition: 0.2s;
+
+               &:hover {
+                  background: $BlueColor;
+                  color: white;
+               }
+            }
+         }
+      }
+
+      .FSC_LogoGraph {
+         img {
+            width: 300px;
+         }
+      }
+   }
+}
