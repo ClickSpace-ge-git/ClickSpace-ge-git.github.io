@@ -1,4 +1,3 @@
-@import 'AboutUsScreen.scss';
 @import "../../components/MainStyle";
 .AboutUsPageContainer {
 
@@ -19,35 +18,8 @@
       text-align:  center;
       margin: 75px 30px 30px;
 
-      @include mobile1 {
-         margin-top: 100px;
-      }
-      @include mobile2 {
-         margin-top: 100px;
-      }
-      @include mobile3 {
-         margin-top: 100px;
-      }
-
       .AbUsPTImg {
-         @include mobile1 {
-         display: flex;
-         flex-direction: column;
-         max-width: 400px;
-         height: 175px;
-         }
-         @include mobile2 {
-            display: flex;
-            flex-direction: column;
-            max-width: 550px;
-            height: 200px;
-         @include mobile3 {
-               display: flex;
-               flex-direction: column;
-               max-width: 850px;
-               height: 225px;
-               }
-
+        
          img {
             max-width: 1300px;
             height: 450px;
@@ -59,7 +31,8 @@
          color: black;
          font-weight: bold;
       }
-   
+   }
+
       .AbUsP_TextContainer {
          display: flex;
          justify-content: center;
@@ -68,19 +41,9 @@
             font-size: 22px;
             width: 100%;
             max-width: 2000px;
-
-            @include mobile1 {
-               text-align: justify;
-            }
-            @include mobile2 {
-               text-align: justify;
-            }
-            @include mobile3 {
-               text-align: justify;
-            }
          }
       }
-      }
+   
 
 
       hr {
@@ -91,25 +54,11 @@
          border: none;
          text-align: center;
       }
-   }
 
    .AbUsPBoxContatiner {
       display: flex;
       justify-content: center;
       text-align: center;
-
-      @include mobile1 {
-         align-items: center;
-         flex-direction: column;
-      }
-      @include mobile2 {
-         align-items: center;
-         flex-direction: column;
-      }
-      @include mobile3 {
-         align-items: center;
-         flex-direction: column;
-      }
 
       .AbUsPBItem {
          margin: 20px;
@@ -119,19 +68,6 @@
          background-color: rgb(240 246 255);
          width: 400px;
          height: 250px;
-
-         @include mobile1 {
-            width: 220px;
-            height: 450px;
-         }
-         @include mobile2 {
-            width: 250px;
-            height: 450px;
-         }
-         @include mobile3 {
-            width: 280px;
-            height: 450px;
-         }
 
          i {
             font-size: 60px;
@@ -170,37 +106,11 @@
    .ABUSTeamThree{
       display: flex;
       flex-direction: row;
-
-      @include mobile1 {
-         display: flex;
-         flex-direction: column;
-      }
-      @include mobile2 {
-         display: flex;
-         flex-direction: column;
-      }
-      @include mobile3 {
-         display: flex;
-         flex-direction: column;
-      }
    }
 
 .ABUSTeamTwo{
    display: flex;
    flex-direction: row;
-
-   @include mobile1 {
-   display: flex;
-   flex-direction: column;
-   }
-   @include mobile2 {
-      display: flex;
-      flex-direction: column;
-      }
-   @include mobile3 {
-      display: flex;
-      flex-direction: column;
-   }   
 }
 
 
@@ -279,4 +189,63 @@
 }
 
    
+}
+
+//Phone Screen
+@media screen and (max-width: 1000px) {
+   .AboutUsPageContainer {
+
+   .AbUsPTittle {
+         height: 450px;
+         text-align: center;
+         padding: 5px;
+         text-align:  center;
+         margin: 75px 30px 30px;
+         justify-content: center;
+         h1 {
+            text-align: center;
+            color: black;
+            font-weight: bold;
+
+         }
+         p {
+            text-align: center;
+            justify-content: center;
+         }
+
+      .AbUsPTImg {
+         display: flex;
+         flex-direction: column;
+         max-width: 400px;
+         height: 175px;
+         }
+      }
+      .AbUsP_TextContainer{
+         .AbUsP_Text {
+         text-align: justify;
+         }
+      }
+      .AbUsPBoxContatiner {
+            align-items: center;
+            flex-direction: column;
+            .AbUsPBItem {
+               width: 220px;
+               height: 450px;
+            }
+      }
+    
+      .ABUSTeam {
+         display: flex;
+         flex-direction: column;
+      
+      .ABUSTeamThree {
+         display: flex;
+         flex-direction: column;
+      }
+      .ABUSTeamTwo {
+      display: flex;
+      flex-direction: column;
+      }
+   }
+}
 }
