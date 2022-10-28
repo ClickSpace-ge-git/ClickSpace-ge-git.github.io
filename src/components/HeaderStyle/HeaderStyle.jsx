@@ -1,5 +1,7 @@
 import "./HeaderStyle.scss"
-import LanguageBar from "../LanguageBar/LanguageBar"
+// import LanguageBar from "../LanguageBar/LanguageBar"
+import TestLanguageBar from "../../components/TestLanguageBar/TestLanguageBar";
+
 export default function HeaderStyle() {
 
    return (
@@ -24,6 +26,14 @@ export default function HeaderStyle() {
                         <li><p>Products</p></li>
                         <li><p>Contact Us</p></li>
                      </ul>
+
+                     <ul className="TP_list hide">
+                        <li><p>მთავარი</p></li>
+                        <li><p>ჩვენს შესახებ</p></li>
+                        <li><p>სერვისები</p></li>
+                        <li><p>პროდუქტები</p></li>
+                        <li><p>დაგვიკავშირდით</p></li>
+                     </ul>
                   </div>
                </div>
 
@@ -32,10 +42,9 @@ export default function HeaderStyle() {
                      <i className="fa-solid fa-bars"></i>
                   </label>
                </div>
-
-               {/*<div className="links">*/}
-               {/*   <LanguageBar />*/}
-               {/*</div>*/}
+               <div className="HSC2_LanguageBar">
+                  <TestLanguageBar />
+               </div>
             </div>
          </div>
       </>

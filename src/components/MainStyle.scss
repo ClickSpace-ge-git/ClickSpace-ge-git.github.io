@@ -32,3 +32,9 @@ $Bframe: 1px $BlueColor solid;
       @content
    }
 }
+
+@mixin computer {
+   @media screen and (min-width: 1081px) {
+      @content
+   }
+}
