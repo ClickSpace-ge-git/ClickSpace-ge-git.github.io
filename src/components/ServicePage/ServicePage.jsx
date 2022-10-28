@@ -1,8 +1,8 @@
 import "./ServicePage.scss"
-import Webcreation from "../../media/images/Service main page/Website creation.png"
-import Webopt from "../../media/images/Service main page/web opt.png"
-import Appdev from "../../media/images/Service main page/app dev.png"
-import Techsup from "../../media/images/Service main page/tech sup.png"
+// import Webcreation from "../../media/images/Service main page/Website creation.png"
+// import Webopt from "../../media/images/Service main page/web opt.png"
+// import Appdev from "../../media/images/Service main page/app dev.png"
+// import Techsup from "../../media/images/Service main page/tech sup.png"
 
 
 

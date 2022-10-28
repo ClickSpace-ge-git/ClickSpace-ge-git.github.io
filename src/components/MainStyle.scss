@@ -26,3 +26,9 @@ $Bframe: 1px $BlueColor solid;
 
 /* ---------- Sizes ----------- */
 
+/* ---------- media ----------- */
+@mixin phone {
+   @media screen and (max-width: 1081px) {
+      @content
+   }
+}

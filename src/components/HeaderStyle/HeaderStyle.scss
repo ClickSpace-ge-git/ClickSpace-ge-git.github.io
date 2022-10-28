@@ -1,80 +1,76 @@
 @import "../MainStyle";
 //Computer Screen
-@media screen and (min-width: 1081px) {
-   .HeaderStyleContainer {
-      .HeaderStyleContainer2 {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         max-width: 2000px;
-
-         .HSC2_MoveDivs {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 2000px;
-
-            .logoPart {
-               img{
-                  width: 220px;
-               }
-            }
-
-            .textPart {
-               display: flex;
-               align-items: center;
-
-               .TP_list {
-                  display: flex;
-                  margin-right: 10px;
-
-                  li p {
-                     padding: 27px 5px;
-
-                     &:hover {
-                        color: #0058dd;
-                     }
-
-                     &::after {
-                        content: '';
-                        display: block;
-                        background: #0058dd;
-                        height: 2px;
-                        border-radius: 100px;
-                        width: 0;
-                        transition: 0.4s;
-                     }
-
-                     &:hover::after {
-                        width: 100%;
-                     }
-                  }
-               }
-            }
-         }
-
-         .mobileMode {
-            display: none;
-         }
-
-         .links {
-            padding-right: 10px;
-         }
-      }
-   }
-}
+//@media screen and (min-width: 1081px) {
+//   .HeaderStyleContainer {
+//      .HeaderStyleContainer2 {
+//
+//
+//         //.HSC2_NavBar {
+//         //   display: flex;
+//         //   justify-content: space-between;
+//         //   align-items: center;
+//         //   width: 2000px;
+//         //
+//         //   .logoPart {
+//         //      img{
+//         //         width: 220px;
+//         //      }
+//         //   }
+//         //
+//         //   .textPart {
+//         //      display: flex;
+//         //      align-items: center;
+//         //
+//         //      .TP_list {
+//         //         display: flex;
+//         //         margin-right: 10px;
+//         //
+//         //         li p {
+//         //            padding: 27px 5px;
+//         //
+//         //            &:hover {
+//         //               color: #0058dd;
+//         //            }
+//         //
+//         //            &::after {
+//         //               content: '';
+//         //               display: block;
+//         //               background: #0058dd;
+//         //               height: 2px;
+//         //               border-radius: 100px;
+//         //               width: 0;
+//         //               transition: 0.4s;
+//         //            }
+//         //
+//         //            &:hover::after {
+//         //               width: 100%;
+//         //            }
+//         //         }
+//         //      }
+//         //   }
+//         //}
+//
+//         //.mobileMode {
+//         //   display: none;
+//         //}
+//         //
+//         //.links {
+//         //   padding-right: 10px;
+//         //}
+//      }
+//   }
+//}
 
 //Phone Screen
 @media screen and (max-width: 1081px) {
    .HeaderStyleContainer {
       .HeaderStyleContainer2 {
-         justify-content: space-between;
 
-         .logoPart {
-            img {
-               width: 200px;
-            }
-         }
+         //.logoPart {
+         //   img {
+         //      width: 200px;
+         //   }
+         //}
 
          .hideNavBar:checked ~ .HSC2_MoveDivs {
             .textPart {
@@ -100,34 +96,34 @@
             }
          }
 
-         .textPart {
-            position: absolute;
-            display: block;
-            justify-content: center;
-            overflow: hidden;
-            width: 100%;
-            background: rgba(white, 0.8);
-            height: 0;
-            transition: 0.3s;
+         //.textPart {
+         //   position: absolute;
+         //   display: block;
+         //   justify-content: center;
+         //   overflow: hidden;
+         //   width: 100%;
+         //   background: rgba(white, 0.8);
+         //   height: 0;
+         //   transition: 0.3s;
+         //
+         //   .TP_list li p {
+         //         text-align: center;
+         //         padding: 15px 0;
+         //         width: 100%;
+         //         border-radius: 10px;
+         //         margin-bottom: 15px;
+         //
+         //         &:hover {
+         //            color: white;
+         //            background: $BlueColor;
+         //         }
+         //      }
+         //   }
 
-            .TP_list li p {
-                  text-align: center;
-                  padding: 15px 0;
-                  width: 100%;
-                  border-radius: 10px;
-                  margin-bottom: 15px;
-
-                  &:hover {
-                     color: white;
-                     background: $BlueColor;
-                  }
-               }
-            }
-
-         .links {
-            position: absolute;
-            right: 60px;
-         }
+         //.links {
+         //   position: absolute;
+         //   right: 60px;
+         //}
       }
    }
 }
@@ -137,19 +133,80 @@
    display: flex;
    justify-content: center;
 
-   .hideNavBar1:checked ~ .HeaderStyleContainer2{
+   /*.hideNavBar1:checked ~ .HeaderStyleContainer2{
       p {
          font-family: $GeFontFamily;
       }
-   }
+   }*/
 
    .HeaderStyleContainer2 {
       display: flex;
+      justify-content: center;
       align-items: center;
       position: absolute;
-      background: rgba(white, 0.8);
+      background: white;
       width: 100%;
+      max-width: 2000px;
 
+      @include phone {
+         justify-content: space-between;
+      }
+
+      .HSC2_NavBar {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+
+         .logoPart {
+            img{
+               width: 220px;
+            }
+         }
+
+         .textPart {
+            .TP_list {
+               display: flex;
+               margin-right: 10px;
+
+               li p {
+                  padding: 27px 5px;
+
+                  &:hover {
+                     color: #0058dd;
+                     background: $BlueColor;
+                  }
+
+                  //&::after {
+                  //   content: '';
+                  //   display: block;
+                  //   background: #0058dd;
+                  //   height: 2px;
+                  //   border-radius: 100px;
+                  //   width: 0;
+                  //   transition: 0.4s;
+                  //}
+
+                  &:hover::after {
+                     width: 100%;
+                  }
+               }
+            }
+         }
+      }
+
+      .mobileMode {
+         display: none;
+      }
+
+      @include phone {
+         .HSC2_NavBar {
+            display: none;
+         }
+         .mobileMode {
+            display: block;
+         }
+      }
 
 
       p {
