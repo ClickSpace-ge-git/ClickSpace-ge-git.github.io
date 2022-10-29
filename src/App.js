@@ -8,6 +8,8 @@ import HomePage from "./pages/HomePage/HomePage";
 import ServicePage from "./pages/ServicePage/ServicePage";
 
 export default function App() {
+
+
   return (
         <BrowserRouter>
             <Routes>
