@@ -23,7 +23,7 @@
     // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
     // Otherwise, leave pathSegmentsToKeep as 0.
     var pathSegmentsToKeep = 0;
-    sessionStorage.setItem("staticserve",window.location.pathname)
+    localStorage.setItem("staticserve",window.location.pathname)
 
     var l = window.location;
     l.replace(
