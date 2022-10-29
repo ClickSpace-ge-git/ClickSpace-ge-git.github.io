@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e0755500.css",
-    "main.js": "/static/js/main.2032d3ce.js",
+    "main.js": "/static/js/main.6369303e.js",
     "static/media/aboutUsPartImage.png": "/static/media/aboutUsPartImage.5096475c1ab216d2a078.png",
     "static/media/Computers_and_people_at_one_desk.jpg": "/static/media/Computers_and_people_at_one_desk.47f3c50d022dc406f564.jpg",
     "static/media/AbUs1.jpg": "/static/media/AbUs1.3810d729bb73d148e789.jpg",
@@ -22,10 +22,10 @@
     "static/media/AbUsTeam3.jpg": "/static/media/AbUsTeam3.32874fb4312abc560477.jpg",
     "index.html": "/index.html",
     "main.e0755500.css.map": "/static/css/main.e0755500.css.map",
-    "main.2032d3ce.js.map": "/static/js/main.2032d3ce.js.map"
+    "main.6369303e.js.map": "/static/js/main.6369303e.js.map"
   },
   "entrypoints": [
     "static/css/main.e0755500.css",
-    "static/js/main.2032d3ce.js"
+    "static/js/main.6369303e.js"
   ]
 }
