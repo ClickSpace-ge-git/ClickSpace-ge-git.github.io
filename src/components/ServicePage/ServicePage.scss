@@ -4,6 +4,60 @@
 
     .ServicePageContainer{
         padding-top: 5rem;
+
+        .SPGC-services{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .SPGC-card{
+                padding: 0 2rem 8rem 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .SPGC-card-reqserv{
+                    font-family: $TitleFontFamilyStyle;
+                    padding-right: 18rem;
+                    opacity: 0.7;
+                    
+
+                }
+
+                .SPGC-card-image{
+                    width: 15rem;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                    display: block;
+                    margin-right: 12rem;
+
+                }
+
+                .SPGC-card-Name{
+                    font-family: $TitleFontFamilyStyle;
+
+
+                    font-size: 2.5rem;
+                    min-width: 15rem;
+                    max-width: 30rem;
+                    justify-content: left;
+                    margin: 1rem 10rem 1rem 0;
+
+
+                }
+                .SPGC-card-Description{
+                    font-family: $TitleFontFamilyStyle;
+
+                    min-width: 20rem;
+                    max-width: 30rem;
+
+
+
+                }
+
+            }
+        
         
         .SPGC-contact{
             display: flex;
@@ -11,11 +65,9 @@
             align-items: center;
 
             .SPGC-Cont-inputs{
-                border: gray solid 1px;
-                border-radius: 20px;
-                box-shadow: 0px -1px 27px -16px rgba(0,0,0,0.75);
-                -webkit-box-shadow: 0px -1px 27px -16px rgba(0,0,0,0.75);
-                -moz-box-shadow: 0px -1px 27px -16px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.76);
+                -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.76);
+                -moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.76);
                 padding: 4rem 2rem;
                 margin: 2rem 0;
                 display: flex;
@@ -27,38 +79,45 @@
 
                 .SPGC-Cont-inp-title{
                     font-family: $TitleFontFamilyStyle;
-                    height: 2rem;
-                    width:20rem;
+                    height: 3rem;
+                    width:16rem;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
                     margin-bottom: 2rem;
-    
+                    line-height: 1.6;
                 }
 
 
                 .SPGC-Cont-inp-field{
+                    
+                    
 
                     .SPGC-Cont-inplabel{
                         font-family: $TitleFontFamilyStyle;
+                        opacity: 0.6;
 
                     }
 
                     .SPGC-Cont-inp{
-                        margin: 1rem;
+                        margin: 1rem 0;
                         font-family: $TitleFontFamilyStyle;
-                        width: 15rem;
+                        width: 16rem;
                         padding: 0.5rem;
                         border-top: none;
+                        border-left: none;
+                        border-right: none;
                         outline:none;
+                        border-color: lightgray;
 
                     }
 
                 }
                 .SPGC-Cont-inp-bttn{
                     font-family: $TitleFontFamilyStyle;
-                    padding: 0.5rem;
+                    font-size: 1.2rem;
+                    padding: 0.8rem;
                     outline: none;
                     border: none;
                     width: 7rem;
@@ -74,19 +133,10 @@
                      }
                     
                 }
-
-                .SPGC-Cont-inp-selector{
-                    font-family: $TitleFontFamilyStyle;
-                    border-top: none;
-                    margin: 1rem;
-                    padding: 0.5rem;
-                    width: 15rem;
-
-
-                }
             }
         }
     }
+}
 
 };
 
@@ -103,6 +153,56 @@
 
     .ServicePageContainer{
         padding-top: 5rem;
+
+        .SPGC-services{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .SPGC-card{
+                padding: 0 2rem 2rem 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .SPGC-card-reqserv{
+                    font-family: $TitleFontFamilyStyle;
+                    // padding-right: 18rem;
+                    opacity: 0.7;
+                    
+
+                }
+
+                .SPGC-card-image{
+                    width: 15rem;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                    display: block;
+                    // margin-right: 12rem;
+
+                }
+
+                .SPGC-card-Name{
+                    font-family: $TitleFontFamilyStyle;
+                    font-size: 2.5rem;
+                    // min-width: 15rem;
+                    // max-width: 30rem;
+                    // justify-content: left;
+                    // margin: 1rem 10rem 1rem 0;
+
+
+                }
+                .SPGC-card-Description{
+                    font-family: $TitleFontFamilyStyle;
+                    opacity: 0;
+                    cursor:default;
+                    min-width: 20rem;
+                    max-width: 30rem;
+                }
+
+            }
+        
         
         .SPGC-contact{
             display: flex;
@@ -110,11 +210,9 @@
             align-items: center;
 
             .SPGC-Cont-inputs{
-                border: black solid 1px;
-                border-radius: 20px;
-                box-shadow: 0px -1px 27px -16px rgba(0,0,0,0.75);
-                -webkit-box-shadow: 0px -1px 27px -16px rgba(0,0,0,0.75);
-                -moz-box-shadow: 0px -1px 27px -16px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.76);
+                -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.76);
+                -moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.76);
                 padding: 4rem 2rem;
                 margin: 2rem 0;
                 display: flex;
@@ -126,37 +224,45 @@
 
                 .SPGC-Cont-inp-title{
                     font-family: $TitleFontFamilyStyle;
-                    height: 2rem;
-                    width:20rem;
+                    height: 3rem;
+                    width:16rem;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
-    
+                    margin-bottom: 2rem;
+                    line-height: 1.6;
                 }
 
 
                 .SPGC-Cont-inp-field{
+                    
+                    
 
                     .SPGC-Cont-inplabel{
                         font-family: $TitleFontFamilyStyle;
+                        opacity: 0.6;
 
                     }
 
                     .SPGC-Cont-inp{
-                        margin: 1rem;
+                        margin: 1rem 0;
                         font-family: $TitleFontFamilyStyle;
-                        width: 15rem;
+                        width: 16rem;
                         padding: 0.5rem;
                         border-top: none;
+                        border-left: none;
+                        border-right: none;
                         outline:none;
+                        border-color: lightgray;
 
                     }
 
                 }
                 .SPGC-Cont-inp-bttn{
                     font-family: $TitleFontFamilyStyle;
-                    padding: 0.5rem;
+                    font-size: 1.2rem;
+                    padding: 0.8rem;
                     outline: none;
                     border: none;
                     width: 7rem;
@@ -175,5 +281,6 @@
             }
         }
     }
+}
 
 };
